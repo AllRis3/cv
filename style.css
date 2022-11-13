@@ -3,105 +3,95 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: grey;
+    margin: 0;
+    padding: 0;
    }
-.navbarcontainer{
-    display: block;
-    width: 100%;
+.entona{
+    color: #1bf8f8;
+}
+.navbar{
     position: fixed;
     top: 0;
+    width: 100%;
     background-color: #0b1b36;
-    z-index: 100;
-    
-    
-}   
-.navbar{
+    z-index: 1;
     display: flex;
     justify-content: flex-end;
-    border-bottom: 5px solid #0a1322;
-    padding: 10px;
-
+    gap: 2rem;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 15px;
+    border-image: linear-gradient(#151521, #0b1b36) 50;
+    border-style: solid;
 }
-.btn{
+.indx{
     background-color: #0b1b36;
     color: gray;
-    border: none;
-    margin-right: 20px;
+    display: flex;
+    align-items: center;
 }
 .resumebtn{
     background-color: #0b1b36;
     color: #1bf8f8;
     border: 1px solid #1bf8f8;
     border-radius: 4px;
-    height: 40px;
-    width: 75px;
-    margin-right: 15px;
+    margin: 10px 15px 10px 0;
+    padding: 10px 12px;
 }
+                    /* TELOS NAVBAR */
 
+.maincontent{
+    margin-top: 100px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 20px;
+    gap: 3rem;
+}
 .header{
     color: white;
-    margin: 90px 0 0 100px;
-    font-size: 24px;
-}
-.entona{
-    color: #1bf8f8;
 }
 .gramoulitsa{
-    display: flex;
     position: absolute;
-    border: 1px solid #1bf8f8;
-    width: 10rem;
-    left: 17rem;
-    top: 6.5rem;
-}
-.containara{
-    margin-top: 30px;
-    display: flex;
-    
-    gap: 4rem;
-}
-.infocontainer{
-    
-    flex: 0.8;
-    flex-direction: column;
-    width: 200px;
-    margin-left: 100px;
+    background: #1bf8f8;
+    height: 1px;
+    width: 12rem;
+    left: 15.5rem;
+    top: 8.5rem;
 }
 .picbox{
     position: relative;
-    margin-top: 25px;
-    width: 250px;
-    height: 250px;
+    width: fit-content;
+    height: fit-content;
+    top: 5rem;
+    
 }
 .pic{
-    width: 230px;
-    border-radius: 3%;
-    margin-top: 20px;
-    position: relative;
-    right: 1em;
-    bottom: 18em;
+    width: 12rem;
+    
 }
 .pozeria{
+    position: absolute;
     border: 2px solid #1bf8f8;
+    top: 0.5rem;
+    left: 0.5rem;
     border-radius: 2%;
-    height: 230px;
+    height: 12rem;
+    width: 12rem;
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 0 100%, 0 90%);
+    z-index: -1;
 }
-.par3{
-    display: inline-block;
-    margin-bottom: 0;
-}
-.technologies{
-    margin-left: 100px;
-    width: 480px;
-}
+
+
 .listcontainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0;
-}
-.list{ 
-    margin: 3px 0;
     list-style: none;
 }
+.ul{
+    padding-left: 0;
+}
+
 .list:before {
         border-style: solid;
         border-width: 0.10em 0.10em 0em 0em;
@@ -118,7 +108,13 @@ body{
         left: 0;
         transform: rotate(45deg);
         margin-right: 20px;
+        
 }
-.ul{
-    padding-left: 0;
+
+.fbprof{
+writing-mode: vertical-rl;
+align-self: flex-end;
+color: white;
+text-decoration: none;
+cursor: pointer;
 }
